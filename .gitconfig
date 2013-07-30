@@ -1,0 +1,15 @@
+[merge]
+	tool = opendiff
+[core]
+	excludesfile = /Users/steven/.gitignore
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	ui = auto
+[user]
+	name = Steven Bedrick
+	email = steve@bedrick.org
+[color]
+    ui = auto
