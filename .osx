@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Show all files (inc. hidden)
+defaults write com.apple.finder AppleShowAllFiles -bool true
+
 # Menu bar: disable transparency
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 
@@ -125,5 +128,15 @@ defaults write com.apple.mail DisableSendAnimations -bool true
 # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
+# disable inline attachments (just show icon)
+defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
+
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
+
+
+# show ip address, hostname, etc. in menu bar clock
+sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+
+#Prevent Safari from Opening "Safe" files automatically - http://machacks.whiskykilo.com/apps/safari.html
+defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
