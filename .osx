@@ -140,3 +140,6 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo Hos
 
 #Prevent Safari from Opening "Safe" files automatically - http://machacks.whiskykilo.com/apps/safari.html
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
+
+# enable proper key repeat behavior
+defaults write -g ApplePressAndHoldEnabled -bool false
