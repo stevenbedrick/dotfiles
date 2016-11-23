@@ -143,3 +143,6 @@ defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 
 # enable proper key repeat behavior
 defaults write -g ApplePressAndHoldEnabled -bool false
+
+# disable stupid and insecure captive portal system:
+defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -bool false
