@@ -146,3 +146,7 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 
 # disable stupid and insecure captive portal system:
 defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -bool false
+
+# disable autoplaying videos
+defaults write com.apple.safari WebKitMediaPlaybackAllowsInline 0
+defaults write com.apple.safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2AllowsInlineMediaPlayback 0
