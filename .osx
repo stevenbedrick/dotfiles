@@ -150,3 +150,6 @@ defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.contro
 # disable autoplaying videos
 defaults write com.apple.safari WebKitMediaPlaybackAllowsInline 0
 defaults write com.apple.safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2AllowsInlineMediaPlayback 0
+
+# disable "smooth scrolling" in Safari, etc. on page-down
+defaults write -g NSScrollAnimationEnabled -bool NO
