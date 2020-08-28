@@ -42,8 +42,7 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 0
-
+defaults write NSGlobalDomain KeyRepeat -int 1
 
 # Save screenshots to the desktop
 defaults write com.apple.screencapture location -string "$HOME/Desktop"
@@ -145,7 +144,7 @@ defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 defaults write -g ApplePressAndHoldEnabled -bool false
 
 # disable stupid and insecure captive portal system:
-defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -bool false
+# defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -bool false
 
 # disable autoplaying videos
 defaults write com.apple.safari WebKitMediaPlaybackAllowsInline 0
