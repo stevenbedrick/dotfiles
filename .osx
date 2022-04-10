@@ -31,8 +31,8 @@ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 # Set Help Viewer windows to non-floating mode
 defaults write com.apple.helpviewer DevMode -bool true
 
-# Disable Notification Center and remove the menu bar icon
-launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
+# Disable Notification Center and remove the menu bar icon - no longer works in Monterey
+#launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
 
 # Enable full keyboard access for all controls
 # (e.g. enable Tab in modal dialogs)
