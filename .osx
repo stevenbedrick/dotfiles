@@ -156,3 +156,6 @@ defaults write -g NSScrollAnimationEnabled -bool NO
 # re-enable pre-Big Sur-style "wide" dialog boxes
 # https://mjtsai.com/blog/2022/04/01/wider-big-sur-alerts/
 defaults write -g NSAlertMetricsGatheringEnabled -bool false
+
+# make finder folder proxy icons show up without hover delay
+defaults write -g NSToolbarTitleViewRolloverDelay -float 0
