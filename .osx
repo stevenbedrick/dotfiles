@@ -157,5 +157,12 @@ defaults write -g NSScrollAnimationEnabled -bool NO
 # https://mjtsai.com/blog/2022/04/01/wider-big-sur-alerts/
 defaults write -g NSAlertMetricsGatheringEnabled -bool false
 
+
 # make finder folder proxy icons show up without hover delay
 defaults write -g NSToolbarTitleViewRolloverDelay -float 0
+
+# window padding
+defaults write -g NSWindowSupportsAutomaticInlineTitle -bool false
+
+# disable Chrome's incredibly annoying print dialog
+defaults write com.google.Chrome DisablePrintPreview -bool true
