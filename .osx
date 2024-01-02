@@ -168,4 +168,5 @@ defaults write -g NSWindowSupportsAutomaticInlineTitle -bool false
 defaults write com.google.Chrome DisablePrintPreview -bool true
 
 # disable Mail's new annoying link behavior:
+# Relevant thread: https://apple.stackexchange.com/questions/450339/turn-off-link-preview-in-mail#comment669426_457934
 defaults write ~/Library/Containers/com.apple.mail/Data/Library/Preferences/com.apple.mail.plist AddLinkPreviews -bool false
