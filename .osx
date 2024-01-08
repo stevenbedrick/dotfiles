@@ -175,3 +175,6 @@ defaults write ~/Library/Containers/com.apple.mail/Data/Library/Preferences/com.
 # Disable weird new text entry cursor
 # https://stackoverflow.com/questions/77248249/disable-macos-sonoma-text-insertion-point-cursor-caps-lock-indicator
 sudo defaults write /Library/Preferences/FeatureFlags/Domain/UIKit.plist redesigned_text_cursor -dict-add Enabled -bool NO
+
+# make TextEdit.app open a new blank document by default instead of the annoying "open" dialog
+defaults write com.apple.TextEdit NSShowAppCentricOpenPanelInsteadOfUntitledFile -bool false
